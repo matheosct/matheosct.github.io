@@ -14,15 +14,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b9d71771d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b9d71771d2.js" crossorigin="anonymous"></script>    
 
-    
-
+    <script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-custom");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 </head>
 
 <body>
     
-    <nav class="navbar navbar-expand-lg">
+    <nav id="home" class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +38,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link mx-4" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link mx-4" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Habilidades</a>
+                    <a class="nav-link mx-4" href="#skills">Habilidades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Formação</a>
+                    <a class="nav-link mx-4" href="#education">Formação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experiência</a>
+                    <a class="nav-link mx-4" href="#xp">Experiência</a>
                 </li>
                 </ul>                
             </div>
@@ -52,7 +58,16 @@
         </div>
     </nav>
 
-    <div class="container">
+<!-- banner -->
+
+    <div class="container-fluid banner">
+        <div class="container">
+            <img src="assets/img/logo.png" alt="logo" class="">
+        </div>
+    </div>
+
+<!-- sobre -->
+    <div id="sobre" class="container mt-5">
         <div class="row d-flex justify-content-around">
 
             <div class="col-12 col-md-4">
@@ -82,7 +97,8 @@
         </div>
     </div>
 
-    <div class="container">
+<!-- skills -->
+    <div id="skills" class="container mt-5">
         <div class="row my-4 justify-content-around">
             <div class="container col-12 col-md-6">
 
@@ -137,28 +153,31 @@
 
             </div>
 
-            <div class="container col-6 justify-content-around"></div>
+            <div class="container col-6 justify-content-around">
+
+            </div>
         </div>
     </div>
 
-    <div class="container">
+<!-- educação -->
+    <div id="education" class="container mt-5">
 
         <div class="row my-4">
             <div class="container col-12 col-md-6 pl-0 lines">
                 <h4>Educação</h4>
 
                 <div class="custom-card p-4 mb-4">
-                    <h4>Colégio Pedro II</h4>
+                    <h5>Colégio Pedro II</h5>
                     <p>Unidade Centro (2010 - 2013)</p>
                 </div>
 
                 <div class="custom-card p-4 my-4">
-                    <h4>Universidade Federal do Rio de Janeiro - UFRJ</h4>
+                    <h5>Universidade Federal do Rio de Janeiro - UFRJ</h5>
                     <p>Bacharelado em comunicação Visual Design</p>
                 </div>
 
                 <div class="custom-card p-4 my-4">
-                    <h4>Faculdade Tecnológica Senac Rio</h4>
+                    <h5>Faculdade Tecnológica Senac Rio</h5>
                     <p>Graduação Tecnológica em Design Gráfico</p>
                 </div>
             </div>
@@ -167,7 +186,7 @@
                 <h4>Certificações</h4>
                 
                 <div class="custom-card p-4 mb-4">
-                    <h4>Instituto Qualifica (2015)</h4>
+                    <h5>Instituto Qualifica (2015)</h5>
                     <ul>
                         <li>Operador de Computador (96 horas)</li>
                         <li>Illustrator (16 horas)</li>
@@ -175,14 +194,14 @@
                 </div>
 
                 <div class="custom-card p-4 my-4">
-                    <h4>COTI Informatica (2017)</h4>
+                    <h5>COTI Informatica (2017)</h5>
                     <ul>
                         <li>Web Designer + PHP + AJAX + MySQL (80 horas)</li>
                     </ul>
                 </div>
 
                 <div class="custom-card p-4 my-4">
-                    <h4>Universidade Federal do Rio de Janeiro - UFRJ (2019)</h4>
+                    <h5>Universidade Federal do Rio de Janeiro - UFRJ (2019)</h5>
                     <ul>
                         <li>Programa de Monitoria Voluntária <br>
                         Disciplina: Análise da Imagem A (2019.1 e 2019.2) <br>
@@ -191,7 +210,7 @@
                 </div>
 
                 <div class="custom-card p-4 my-4">
-                    <h4>Faculdade de tecnologia Senac Rio</h4>
+                    <h5>Faculdade de tecnologia Senac Rio</h5>
                     <ul>
                         <li>Programador Visual Gráfico (400 horas)</li>
                         <li>Designer Promocional (400 horas)</li>
@@ -209,11 +228,12 @@
 
     </div>
 
-    <div class="container">
+    <!-- xp -->
+    <div id="xp" class="container">
         <h4>Experiência</h4>
 
         <div class="custom-card p-4 my-4">
-            <h4>Museu da Chácara do Céu</h4>
+            <h5>Museu da Chácara do Céu</h5>
             <p>Estagiário de Design (03/2016 - 02/2019)</p>
             <div class="d-block d-md-flex justify-content-around">
                 <div class="col">
@@ -240,7 +260,7 @@
         </div>
 
         <div class="custom-card p-4 my-4">
-            <h4>isFactory</h4>
+            <h5>isFactory</h5>
             <p>Programador Front-End e Designer UX-UI (05/2019 - atualmente)</p>
             <ul>
                 <li>Criação de layouts para sites e sistemas</li>

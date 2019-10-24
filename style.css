@@ -8,8 +8,47 @@ body {
   background-color: #100e17 !important;
 }
 
-p, h4, li {
-  color: #ccc;
+p, li, h5 {
+  color: #F2F2F2;
+}
+
+h4 {
+  color: #63F767;
+}
+
+.navbar-custom {
+  background-color: #0a090f;
+  height: 6em;
+}
+
+.navbar-custom a {
+  color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.navbar-custom a:hover {
+  color: #63F767;
+}
+
+.navbar-custom .navbar-toggler {
+  background-color: #F2F2F2;
+}
+
+.scrolled {
+  height: 4em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner {
+  height: 90vh;
+  line-height: 90vh;
+  background-color: #F2F2F2;
+}
+
+.banner img {
+  height: 20em;
+  width: auto;
 }
 
 .custom-card {
@@ -17,12 +56,16 @@ p, h4, li {
   border-radius: 5px;
 }
 
-.lines {
-  border-left: 2px solid #0a090f;
+.progress {
+  height: 0.7rem !important;
+}
+
+.progress-bar {
+  background-color: #63F767 !important;
 }
 
 .footer a {
-  color: #ccc;
+  color: #F2F2F2;
   font-size: 21px;
 }
 
@@ -38,7 +81,7 @@ p, h4, li {
   position: absolute;
   bottom: 80%;
   right: 0;
-  color: #ccc;
+  color: #F2F2F2;
   font-size: 16px;
   line-height: 24px;
   height: 24px;
@@ -57,13 +100,13 @@ p, h4, li {
   right: 0;
   width: 50px;
   height: 1px;
-  background: #ccc;
+  background: #F2F2F2;
 }
 
 .footer .social a {
   display: block;
   margin-bottom: 20px;
   text-align: center;
-  color: #ccc;
+  color: #F2F2F2;
 }
 /*# sourceMappingURL=style.css.map */

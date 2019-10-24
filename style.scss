@@ -1,5 +1,7 @@
 $radius: 5px; 
 $color: #0a090f;
+$verde: #63F767;
+$cinza: #F2F2F2;
 
 * {
     scroll-behavior: smooth;
@@ -10,8 +12,42 @@ body {
     background-color: #100e17 !important;
 }
 
-p, h4, li {
-    color: #ccc;
+p, li, h5 {
+    color: $cinza;
+}
+
+h4 {
+    color: $verde;
+}
+
+.navbar-custom {
+    background-color: $color;
+    height: 6em;
+    a {
+        color: $cinza;
+        text-transform: uppercase;
+        &:hover {
+            color: $verde;
+        }
+    }
+    .navbar-toggler {
+        background-color: $cinza;
+    }
+}
+
+.scrolled {
+    height: 4em;
+    transition: 0.3s;
+}
+
+.banner {
+    height: 90vh;
+    line-height: 90vh;
+    background-color: $cinza;
+    img {
+        height: 20em;
+        width: auto;
+    }
 }
 
 .custom-card {
@@ -19,12 +55,16 @@ p, h4, li {
     border-radius: $radius;
 }
 
-.lines {
-    border-left: 2px solid $color;
+.progress {
+    height: 0.7rem !important;
+}
+
+.progress-bar {
+    background-color: $verde !important;
 }
 
 .footer a {
-    color: #ccc;
+    color: $cinza;
     font-size: 21px;
 }
 
@@ -33,13 +73,12 @@ p, h4, li {
     z-index: 100;
     bottom: 50px;
     right: 50px;
-
     .rotate {
         padding-right: 60px;
         position: absolute;
         bottom: 80%;
         right: 0;
-        color: #ccc;
+        color: $cinza;
         font-size: 16px;
         line-height: 24px;
         height: 24px;
@@ -47,7 +86,6 @@ p, h4, li {
         transform-origin: 100% 0;
         text-align: right;
         transform: rotate(90deg);
-
         &::after {
             content: '';
             position: absolute;
@@ -55,15 +93,14 @@ p, h4, li {
             right: 0;
             width: 50px;
             height: 1px;
-            background: #ccc;
+            background: $cinza;
         }
     }
-
     .social a {
         display: block;
         margin-bottom: 20px;
         text-align: center;
-        color: #ccc;
+        color: $cinza;
     }
 
 }
