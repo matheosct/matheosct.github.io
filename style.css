@@ -43,11 +43,16 @@ h4 {
 .banner {
   height: 90vh;
   line-height: 90vh;
-  background-color: #F2F2F2;
+  background-color: #0a090f;
 }
 
 .banner img {
   height: 20em;
+  width: auto;
+}
+
+.anim {
+  height: 400px;
   width: auto;
 }
 
