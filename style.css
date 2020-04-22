@@ -83,6 +83,10 @@ body ul {
 .anim {
   background-color: #0a090f;
   height: 50vh;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about {
