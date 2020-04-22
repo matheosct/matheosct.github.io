@@ -1,77 +1,175 @@
-* {
-  scroll-behavior: smooth;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-body {
-  background-color: #100e17 !important;
+body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-p, li, h5 {
-  color: #F2F2F2;
-}
-
-h4 {
-  color: #63F767;
-}
-
-.navbar-custom {
+body .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #0a090f;
-  height: 6em;
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+  margin: 0.5rem;
 }
 
-.navbar-custom a {
+body a, body p, body li {
+  font-size: 0.8rem;
+}
+
+body li {
+  margin-top: 0.3rem;
+}
+
+body ul {
+  margin-left: 1rem;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0a090f;
+}
+
+.navbar .menu {
+  width: 60%;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul a {
   color: #F2F2F2;
   text-transform: uppercase;
 }
 
-.navbar-custom a:hover {
+.navbar ul a:hover {
   color: #63F767;
 }
 
-.navbar-custom .navbar-toggler {
-  background-color: #F2F2F2;
-}
-
-.scrolled {
-  height: 4em;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.banner {
-  height: 90vh;
-  line-height: 90vh;
-  background-color: #0a090f;
-}
-
-.banner img {
-  height: 20em;
-  width: auto;
-}
-
 .anim {
-  height: 400px;
-  width: auto;
-}
-
-.custom-card {
   background-color: #0a090f;
-  border-radius: 5px;
+  height: 50vh;
 }
 
-.progress {
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.about .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.edu-content p {
+  margin-top: auto;
+}
+
+.certif-content ul, .xp-content ul {
+  margin-top: auto;
+}
+
+.skills, .education, .certification, .xp {
+  margin-top: 2rem;
+}
+
+.skills h2, .education h2, .certification h2, .xp h2 {
+  margin-left: 0.5rem;
+}
+
+.skills h3, .education h3, .certification h3, .xp h3 {
+  margin-bottom: 1rem;
+}
+
+.skills, .edu-content, .certif-content, .xp-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .card, .edu-content .card, .certif-content .card, .xp-content .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
+}
+
+.skills .skills-content, .edu-content .skills-content, .certif-content .skills-content, .xp-content .skills-content {
+  margin: 0 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.skills .skill, .edu-content .skill, .certif-content .skill, .xp-content .skill {
+  margin-bottom: 1rem;
+}
+
+.skills .skill p, .edu-content .skill p, .certif-content .skill p, .xp-content .skill p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills .skill .progress, .edu-content .skill .progress, .certif-content .skill .progress, .xp-content .skill .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
   height: 0.7rem !important;
+  background-color: #F2F2F2;
+  border-radius: 0.5rem;
 }
 
-.progress-bar {
-  background-color: #63F767 !important;
-}
-
-.footer a {
+.skills .skill .progress .progress-bar, .edu-content .skill .progress .progress-bar, .certif-content .skill .progress .progress-bar, .xp-content .skill .progress .progress-bar {
   color: #F2F2F2;
-  font-size: 21px;
+  background-color: #63F767 !important;
 }
 
 .footer {
@@ -87,7 +185,7 @@ h4 {
   bottom: 80%;
   right: 0;
   color: #F2F2F2;
-  font-size: 16px;
+  font-size: 0.9rem;
   line-height: 24px;
   height: 24px;
   white-space: nowrap;
@@ -108,10 +206,24 @@ h4 {
   background: #F2F2F2;
 }
 
+.footer .social {
+  margin-top: 1rem;
+}
+
 .footer .social a {
   display: block;
   margin-bottom: 20px;
   text-align: center;
   color: #F2F2F2;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+  .about, .skills, .edu-content, .certif-content, .xp-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

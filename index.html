@@ -4,295 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Matheus Costa</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="jQuery-plugin-progressbar.js">
-    <link rel="stylesheet" href="jQuery-plugin-progressbar.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css-reset.css">
     <script src="https://kit.fontawesome.com/b9d71771d2.js" crossorigin="anonymous"></script> 
-    
-
-    <script>
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".navbar-custom");
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-        });
-    });
+    <style>  </style>
 </script>
 </head>
 
 <body>
-    
-    <nav id="home" class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link mx-4" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-4" href="#sobre">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-4" href="#skills">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-4" href="#education">Formação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-4" href="#xp">Experiência</a>
-                </li>
-                </ul>                
-            </div>
-
-        </div>
+<header>
+    <nav id="home" class="navbar">
+        <ul class="menu container">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#skills">Habilidades</a>
+            </li>
+            <li>
+                <a href="#education">Formação</a>
+            </li>
+            <li>
+                <a href="#xp">Experiência</a>
+            </li>
+        </ul>
     </nav>
-
-<!-- banner -->
-
-    <div class="container-fluid banner">
-        <div id="anim" class="anim"></div>
-    </div>
-
+    
+    <div id="anim" class="anim"></div>
+</header>
 <!-- sobre -->
-    <div id="sobre" class="container mt-5">
-        <div class="row d-flex justify-content-around">
-
-            <div class="col-12 col-md-4">
-                <div class="p-3 shadow custom-card">
-                    <img src="" alt="">
-                    <h4>Web Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="p-3 shadow custom-card">
-                    <img src="" alt="">
-                    <h4>UX/UI Designer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="p-3 shadow custom-card">
-                    <img src="" alt="">
-                    <h4>Design Gráfico</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
-                </div>
-            </div>
-
-        </div>
+<section id="about" class="about container">
+    <div class="card">
+        <img src="" alt="">
+        <h2>Web Developer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
     </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h2>UX/UI Designer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
+    </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <h2>Designer Gráfico</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus repellat mollitia eius, dolore magni obcaecati ut perspiciatis!</p>
+    </div>
+</section>
 
 <!-- skills -->
-    <div id="skills" class="container mt-5">
-        <div class="row my-4 justify-content-around">
-            <div class="container col-12 col-md-6">
-
-                <div class="skill">
-                    <p>Photoshop</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>Illustrator</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>Indesign</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>After Effects</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>Adobe XD</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>HTML & CSS</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
-                <div class="skill">
-                    <p>Bootstrap</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-
+<section id="skills" class="skills container">
+    <div class="skills-content">
+        <div class="skill">
+            <p>Photoshop</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+        </div>
 
-            <div class="container col-6 justify-content-around">
+        <div class="skill">
+            <p>Illustrator</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
 
+        <div class="skill">
+            <p>Indesign</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
     </div>
+
+    <div class="skills-content">
+        <div class="skill">
+            <p>After Effects</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Adobe XD</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Bootstrap</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- educação -->
-    <div id="education" class="container mt-5">
-
-        <div class="row my-4">
-            <div class="container col-12 col-md-6 pl-0 lines">
-                <h4>Educação</h4>
-
-                <div class="custom-card p-4 mb-4">
-                    <h5>Colégio Pedro II</h5>
-                    <p>Unidade Centro (2010 - 2013)</p>
-                </div>
-
-                <div class="custom-card p-4 my-4">
-                    <h5>Universidade Federal do Rio de Janeiro - UFRJ</h5>
-                    <p>Bacharelado em comunicação Visual Design</p>
-                </div>
-
-                <div class="custom-card p-4 my-4">
-                    <h5>Faculdade Tecnológica Senac Rio</h5>
-                    <p>Graduação Tecnológica em Design Gráfico</p>
-                </div>
-            </div>
-
-            <div class="container col-12 col-md-6 pl-0 lines">
-                <h4>Certificações</h4>
-                
-                <div class="custom-card p-4 mb-4">
-                    <h5>Instituto Qualifica (2015)</h5>
-                    <ul>
-                        <li>Operador de Computador (96 horas)</li>
-                        <li>Illustrator (16 horas)</li>
-                    </ul>
-                </div>
-
-                <div class="custom-card p-4 my-4">
-                    <h5>COTI Informatica (2017)</h5>
-                    <ul>
-                        <li>Web Designer + PHP + AJAX + MySQL (80 horas)</li>
-                    </ul>
-                </div>
-
-                <div class="custom-card p-4 my-4">
-                    <h5>Universidade Federal do Rio de Janeiro - UFRJ (2019)</h5>
-                    <ul>
-                        <li>Programa de Monitoria Voluntária <br>
-                        Disciplina: Análise da Imagem A (2019.1 e 2019.2) <br>
-                        Prof. Julie Pires</li>
-                    </ul>
-                </div>
-
-                <div class="custom-card p-4 my-4">
-                    <h5>Faculdade de tecnologia Senac Rio</h5>
-                    <ul>
-                        <li>Programador Visual Gráfico (400 horas)</li>
-                        <li>Designer Promocional (400 horas)</li>
-                        <li>Desginer de Interfaces (400 horas)</li>
-                        <li>Programa de Monitoria Voluntária <br>
-                        Disciplina: Imagem Digital <br>
-                        Prof. Leandro Ciccarelli</li>
-                        <li>Programa de Monitoria Voluntária <br>
-                        Disciplina: Construção de Páginas Web <br>
-                        Prof. Gabriela Silveira Barbosa</li>
-                    </ul>
-                </div>
-            </div>
+<section id="education" class="education container">
+    <h2>Educação</h2>
+    
+    <div class="edu-content">
+        <div class="card">
+            <h3>Colégio Pedro II</h3>
+            <p>Unidade Centro (2010 - 2013)</p>
         </div>
 
+        <div class="card">
+            <h3>Universidade Federal do Rio de Janeiro - UFRJ</h3>
+            <p>Bacharelado em Comunicação Visual Design</p>
+        </div>
+
+        <div class="card">
+            <h3>Faculdade Tecnológica Senac Rio</h3>
+            <p>Graduação Tecnológica em Design Gráfico</p>
+        </div>
     </div>
+</section>
 
-    <!-- xp -->
-    <div id="xp" class="container">
-        <h4>Experiência</h4>
+<section id="certification" class="certification container">
+    <h2>Certificações</h2>
 
-        <div class="custom-card p-4 my-4">
-            <h5>Museu da Chácara do Céu</h5>
-            <p>Estagiário de Design (03/2016 - 02/2019)</p>
-            <div class="d-block d-md-flex justify-content-around">
-                <div class="col">
-                    <ul>
-                        <li>Tratamento de imagens</li>
-                        <li>Ajudante de montagem de exposições</li>
-                        <li>Diagramação de documentos internos</li>
-                        <li>Encadernação</li>
-                        <li>Criação de cartões de visita</li>
-                        <li>Criação de etiquetas</li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <ul>
-                        <li>Montagem de embalagens</li>
-                        <li>Edição de vídeo</li>
-                        <li>Produção de catálogos</li>
-                        <li>Montagem de legendas</li>
-                        <li>Fotografia de exposiçoes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="custom-card p-4 my-4">
-            <h5>isFactory</h5>
-            <p>Programador Front-End e Designer UX-UI (05/2019 - atualmente)</p>
+    <div class="certif-content">
+        <div class="card">
+            <h3>Instituto Qualifica (2015)</h3>
             <ul>
-                <li>Criação de layouts para sites e sistemas</li>
-                <li>Programação em framework Angular</li>
+                <li>Operador de Computador (96 horas)</li>
+                <li>Illustrator (16 horas)</li>
             </ul>
         </div>
 
-    </div>
+        <div class="card">
+            <h3>COTI Informatica (2017)</h3>
+            <ul>
+                <li>Web Designer + PHP + AJAX + MySQL (80 horas)</li>
+            </ul>
+        </div>
 
-    <div class="footer">
+        <div class="card">
+            <h3>Universidade Federal do Rio de Janeiro - UFRJ (2019)</h3>
+            <ul>
+                <li>Programa de Monitoria Voluntária <br>
+                Disciplina: Análise da Imagem A (2019.1) <br>
+                Prof. Julie Pires</li>
+                <li>Programa de Monitoria Voluntária <br>
+                Disciplina: Análise da Imagem A (2019.2) <br>
+                Prof. Julie Pires</li>
+            </ul>
+        </div>
 
-        <div class="follow text-center">
-
-            <p class="rotate">Follow</p>
-
-            <div class="social">
-                <a href="https://www.facebook.com/matheosct" target="_blank" class="d-block my-3">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="https://www.instagram.com/matheosct" target="_blank" class="d-block my-3">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://www.behance.net/matheosct" target="_blank" class="d-block my-3">
-                    <i class="fab fa-behance"></i>
-                </a>
-            </div>
-            
+        <div class="card">
+            <h3>Faculdade de tecnologia Senac Rio</h3>
+            <ul>
+                <li>Programador Visual Gráfico (400 horas)</li>
+                <li>Designer Promocional (400 horas)</li>
+                <li>Designer de Interfaces (400 horas)</li>
+                <li>Programa de Monitoria Voluntária <br>
+                Disciplina: Imagem Digital <br>
+                Prof. Leandro Ciccarelli</li>
+                <li>Programa de Monitoria Voluntária <br>
+                Disciplina: Construção de Páginas Web <br>
+                Prof. Gabriela Silveira Barbosa</li>
+            </ul>
         </div>
     </div>
+</section>
 
-    <script src="lottie.js"></script>
-    <script src="script.js"></script>
+<!-- xp -->
+<section id="xp" class="xp container">
+    <h2>Experiência</h2>
+
+    <div class="xp-content">
+        <div class="card">
+            <h3>Museu da Chácara do Céu</h3>
+            <p>Estagiário de Design (03/2016 - 02/2019)</p>
+                <ul>
+                    <li>Tratamento de imagens</li>
+                    <li>Ajudante de montagem de exposições</li>
+                    <li>Diagramação de documentos internos</li>
+                    <li>Criação de cartões de visita</li>
+                    <li>Criação de etiquetas
+                    <li>Produção de catálogos</li>
+                    <li>Diagramação e montagem de legendas</li>
+                </ul>
+        </div>
+    
+        <div class="card">
+            <h3>isFactory</h3>
+            <p>Programador Front-End e Designer UX-UI (05/2019 - atualmente)</p>
+            <ul>
+                <li>Criação de layouts para sites e sistemas</li>
+                <li>Configuração e programação de sites institucionais e sistemas</li>
+                <li>Programação em framework Angular</li>
+                <li>Diagramação da revista digital O Atma</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+
+    <div class="follow text-center">
+
+        <p class="rotate">Follow</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/matheosct" target="_blank" class="d-block my-3">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/matheosct" target="_blank" class="d-block my-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.behance.net/matheosct" target="_blank" class="d-block my-3">
+                <i class="fab fa-behance"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+<script src="lottie.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
